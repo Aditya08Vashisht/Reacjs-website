@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.firstsection {
+  width: 1270px;
+  height: 90px;
+  border-radius: 0px, 0px, 32px, 32px;
+  background-color: rgba(212, 225, 255, 1);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem; /* Optional: Add padding for spacing */
+}
+
+.logo {
+  margin-left: 25px;
+  margin-bottom: 1rem;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem; /* Adjusted gap between buttons */
+  list-style: none; /* Remove list bullets */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+.navbar li {
+  margin: 0; /* Reset default margin for list items */
+}
+
+.navbar a button {
+  width: 100px;
+  height: 50px;
+  font-size: 16px; /* Adjust font size */
+  background-color: #ff6f61; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar a button:hover {
+  background-color: #ff3b30; /* Darker color on hover */
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 1;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.para {
+  color: #164d9f;
+}
+
+/* Headings */
+.para h1,
+.para h2,
+.para p {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.para h1 {
+  font-size: 3em;
+  font-weight: 700; /* Bold */
+  color: #1a73e8;
+}
+
+.para h2 {
+  font-size: 2em;
+  font-weight: 600; /* Semi-bold */
+  color: #164d9f;
+  margin-top: 0.5rem;
+}
+
+.para p {
+  font-size: 1.2em;
+  font-weight: 400; /* Regular */
+  color: #333;
+  margin-top: 1rem;
+}
+
+/* Button */
+.btn {
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #07476b;
+}
+
+.nxttoshishir {
+  width: 536px;
+  height: 350px;
+  opacity: 1; /* Set opacity to 1 to make it visible */
+}
+
+.about {
+  margin-top: 5rem;
+  width: 1255px;
+  height: 415px;
+  margin-right: 20rem;
+}
+
+.sec-3 {
+  font-family: "Poppins", sans-serif;
+  color: #1a73e8;
+  display: flex;
+  justify-content: center;
+}
+
+.text-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.box-header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.box-content {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.conbutton {
+  list-style-type: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px; /* Ensure container does not get too wide */
+  margin: 0 auto; /* Center the grid container */
+  max-height: 800px;
+}
+
+.image-box {
+  position: relative;
+  width: 100%;
+  padding-top: 150%; /* Maintain aspect ratio */
+  overflow: hidden;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid red;
+}
+
+.image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0 0 10px 10px;
+  transition: height 0.3s ease-in-out;
+}
+
+.image-box:hover .info-overlay {
+  height: 80px; /* Adjust height as needed */
+}
+
+.info-overlay h3,
+.info-overlay p {
+  margin: 5px;
+}
+
+.onlybox {
+  width: 1075px;
+  height: 265px;
+  padding: 68px 92px;
+  gap: 10px;
+  background-color: rgba(9, 67, 255, 0.71);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.accline {
+  font-size: 35px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+.boxcontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.contact-button {
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #043878d5;
+}
+
+/* Last Section */
+.lastsection {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  margin-top: 10rem;
+  width: 100%; /* Adjust width as needed */
+  height: 400px;
+  background-color: rgba(212, 225, 255, 1);
+}
+
+/* Lestsentences */
+.lestsentences {
+  text-align: center; /* Center text within the container */
+}
+
+/* Headings */
+.lestsentences h1,
+.lestsentences h2 {
+  margin: 0; /* Remove default margins */
+  padding: 0; /* Remove default padding */
+}
+
+/* Customize the appearance of headings */
+.lestsentences h1 {
+  font-size: 3em; /* Adjust font size as needed */
+  color: #1a73e8; /* Customize color */
+}
+
+.lestsentences h2 {
+  font-size: 2em; /* Adjust font size as needed */
+  color: #164d9f; /* Customize color */
+  margin-top: 1rem; /* Add margin to separate from icons */
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  gap: 10px; /* Space between icons */
+  margin-top: 1rem; /* Add margin to separate from headings */
+}
+
+.social-icons a {
+  display: inline-block; /* Ensure links are block elements */
+  margin-right: 1.5rem;
+}
+
+.social-icons img {
+  width: 40px; /* Adjust icon size as needed */
+  height: 40px; /* Adjust icon size as needed */
+}
